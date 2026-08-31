@@ -1,0 +1,68 @@
+// use prisma-next
+
+model User {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  username String?
+  name     String?
+
+  animeList UserAnime[]
+  reviews   Review[]
+
+  createdAt TimestamptzString @default(now())
+  updatedAt temporal.updatedAtString()
+}
+
+model Anime {
+  id            Int    @id @default(autoincrement())
+  malId         Int    @unique
+  title         String
+  imageUrl      String?
+  totalEpisodes Int?
+
+  users   UserAnime[]
+  reviews Review[]
+
+  createdAt TimestamptzString @default(now())
+  updatedAt temporal.updatedAtString()
+}
+
+model UserAnime {
+  id       Int    @id @default(autoincrement())
+  status   String
+  progress Int    @default(0)
+
+  progressSeconds Int @default(0)
+
+  userId  Int
+  animeId Int
+
+  user  User  @relation(fields: [userId], references: [id])
+  anime Anime @relation(fields: [animeId], references: [id])
+
+  createdAt TimestamptzString @default(now())
+  updatedAt temporal.updatedAtString()
+
+  @@unique([userId, animeId])
+  @@index([userId])
+  @@index([animeId])
+}
+
+model Review {
+  id      Int     @id @default(autoincrement())
+  rating  Int
+  comment String?
+
+  userId  Int
+  animeId Int
+
+  user  User  @relation(fields: [userId], references: [id])
+  anime Anime @relation(fields: [animeId], references: [id])
+
+  createdAt TimestamptzString @default(now())
+  updatedAt temporal.updatedAtString()
+
+  @@unique([userId, animeId])
+  @@index([userId])
+  @@index([animeId])
+}
