@@ -66,7 +66,7 @@ export default async function MinhaListaPage({ searchParams }: MinhaListaPagePro
       })
       .include("anime")
       .all()
-    : []) as AnimeListItem[];
+    : []) as unknown as AnimeListItem[];
   const items = selectedStatus === "ALL"
     ? allItems
     : allItems.filter((item) => item.status ===
@@ -253,7 +253,7 @@ export default async function MinhaListaPage({ searchParams }: MinhaListaPagePro
           AnimeHub — Projeto acadêmico
         </p>
         <p>
-         Next.js · Prisma · Neon · Tailwind CSS
+          Minha Lista · Progresso · Prisma · Neon
         </p>
       </div>
     </footer>
