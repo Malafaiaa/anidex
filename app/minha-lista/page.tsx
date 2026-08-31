@@ -253,7 +253,7 @@ export default async function MinhaListaPage({ searchParams }: MinhaListaPagePro
           AnimeHub — Projeto acadêmico
         </p>
         <p>
-          Minha Lista · Progresso · Prisma · Neon
+         Next.js · Prisma · Neon · Tailwind CSS
         </p>
       </div>
     </footer>
