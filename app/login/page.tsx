@@ -49,7 +49,7 @@ export default function LoginPage() {
             Bem-vindo de volta
           </div>
           <h1 className="text-3xl font-black tracking-tight">
-            Entrar no <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">AnimeHub</span>
+            Entrar no <span className="bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent">AniDex</span>
           </h1>
           <p className="mt-2 text-sm leading-6 text-zinc-500">
             Acesse sua lista, progresso e avaliações.
@@ -61,7 +61,12 @@ export default function LoginPage() {
             <input id="email" type="email" autoComplete="email" required value={email} onChange={(event) => setEmail(event.target.value)} placeholder="voce@email.com" className="h-12 w-full rounded-xl border border-white/10 bg-[#111113] px-4 text-sm text-zinc-100 outline-none transition placeholder:text-zinc-700 focus:border-violet-500/60 focus:ring-2 focus:ring-violet-500/10" />
           </div>
           <div>
-            <label htmlFor="password" className="mb-2 block text-xs font-medium uppercase tracking-wider text-zinc-500">Senha</label>
+            <div className="mb-2 flex items-center justify-between gap-3">
+              <label htmlFor="password" className="text-xs font-medium uppercase tracking-wider text-zinc-500">Senha</label>
+              <Link href="/esqueci-senha" className="text-xs font-medium text-violet-400 transition hover:text-violet-300">
+                Esqueci minha senha
+              </Link>
+            </div>
             <div className="relative">
               <input id="password" type={showPassword ? "text" : "password"} autoComplete="current-password" required value={password} onChange={(event) => setPassword(event.target.value)} placeholder="Sua senha" className="h-12 w-full rounded-xl border border-white/10 bg-[#111113] px-4 pr-12 text-sm text-zinc-100 outline-none transition placeholder:text-zinc-700 focus:border-violet-500/60 focus:ring-2 focus:ring-violet-500/10" />
               <button type="button" onClick={() => setShowPassword((current) => !current)} className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-600 transition hover:text-zinc-300" aria-label={showPassword ? "Ocultar senha" : "Mostrar senha"}>
