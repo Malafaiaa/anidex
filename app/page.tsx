@@ -57,7 +57,7 @@ export default async function Home({ searchParams }: HomeProps) {
             você está assistindo em um só lugar.
           </p>
           <form action="/" method="GET" className="mt-7 max-w-xl rounded-2xl border border-white/10 bg-white/[0.05] p-2 shadow-2xl shadow-black/30 backdrop-blur sm:mt-8 sm:flex sm:items-center sm:gap-2">
-            <div className="flex min-w-0 items-center">
+            <div className="flex min-w-0 flex-1 items-center">
               <Search className="ml-2 h-5 w-5 shrink-0 text-zinc-500 sm:ml-3" />
               <input type="text" name="q" placeholder="Pesquise Naruto, One Piece, Bleach..." className="h-11 min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-zinc-600" />
             </div>
@@ -120,7 +120,7 @@ export default async function Home({ searchParams }: HomeProps) {
     </section>)}
     <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12">
       {query && (<form action="/" method="GET" className="mb-10 max-w-2xl rounded-2xl border border-white/10 bg-white/[0.04] p-2 shadow-xl backdrop-blur sm:mb-12 sm:flex sm:items-center sm:gap-3">
-        <div className="flex min-w-0 items-center">
+        <div className="flex min-w-0 flex-1 items-center">
           <Search className="ml-2 h-5 w-5 shrink-0 text-zinc-500 sm:ml-3" />
           <input type="text" name="q" defaultValue={query} placeholder="Pesquise por Naruto, One Piece, Bleach..." className="h-12 min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-zinc-600" />
         </div>
