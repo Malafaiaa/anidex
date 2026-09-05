@@ -2,6 +2,28 @@
 
 O AniDex é uma plataforma de descoberta, organização e acompanhamento de animes. Não é uma plataforma de streaming: o foco é permitir que o usuário pesquise títulos, monte sua lista, acompanhe progresso, registre avaliações e visualize estatísticas.
 
+## Status do projeto
+
+**Entrega final — desenvolvimento e testes concluídos.**
+
+- Código finalizado
+- Banco de dados validado
+- Autenticação validada
+- APIs integradas
+- Responsividade revisada
+- Recuperação de senha testada
+- Deploy publicado na Vercel
+- Fluxos principais testados em produção
+
+## Entregas acadêmicas
+
+| Etapa | Funcionalidade principal | Situação |
+| --- | --- | --- |
+| AC1 | Busca de animes e catálogo A–Z integrado à AniList | Concluído |
+| AC2 | Minha Lista com status, episódio atual e minutagem | Concluído |
+| AC3 | Sistema de avaliações com nota, comentário e média da comunidade | Concluído |
+| Prova | Recuperação de senha por código enviado por e-mail | Concluído |
+
 ## Done
 
 - [#3 Estruturar banco de dados e relacionamentos](https://github.com/Malafaiaa/anidex/issues/3)
@@ -10,18 +32,9 @@ O AniDex é uma plataforma de descoberta, organização e acompanhamento de anim
 - [#6 Implementar Minha Lista e acompanhamento de progresso](https://github.com/Malafaiaa/anidex/issues/6)
 - [#7 Implementar avaliações e Dashboard](https://github.com/Malafaiaa/anidex/issues/7)
 - [#8 Publicar AniDex no GitHub e Vercel](https://github.com/Malafaiaa/anidex/issues/8)
-
-## In progress
-
 - [#1 Testar recuperação de senha em produção](https://github.com/Malafaiaa/anidex/issues/1)
 - [#2 Revisar responsividade mobile final](https://github.com/Malafaiaa/anidex/issues/2)
 - [#9 Preparar entrega e apresentação final](https://github.com/Malafaiaa/anidex/issues/9)
-
-## Backlog
-
-- Revisar pequenos detalhes visuais encontrados nos testes finais
-- Corrigir qualquer regressão identificada em produção
-- Atualizar documentação caso alguma funcionalidade mude antes da entrega
 
 ## Áreas do projeto
 
@@ -34,10 +47,10 @@ O AniDex é uma plataforma de descoberta, organização e acompanhamento de anim
 | Deploy | GitHub, Vercel, variáveis de ambiente e configuração do Neon Auth |
 | Documentação | README, guia de estudo e preparação para apresentação |
 
-## Fluxo de trabalho
+## Fluxo de trabalho utilizado
 
 `Backlog → To do → In progress → Review → Done`
 
-## Situação atual
+## Situação final
 
-A maior parte do desenvolvimento está concluída. A fase atual é de QA, responsividade, validação da recuperação de senha e preparação para a entrega final.
+O AniDex está concluído e publicado. As funcionalidades previstas foram implementadas e os principais fluxos foram testados em produção. O projeto está na etapa de entrega e apresentação final.
