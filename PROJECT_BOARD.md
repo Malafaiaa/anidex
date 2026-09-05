@@ -6,23 +6,23 @@ O AniDex é uma plataforma de descoberta, organização e acompanhamento de anim
 
 **Entrega final — desenvolvimento e testes concluídos.**
 
-- Código finalizado
-- Banco de dados validado
-- Autenticação validada
-- APIs integradas
-- Responsividade revisada
-- Recuperação de senha testada
-- Deploy publicado na Vercel
-- Fluxos principais testados em produção
+- [x] Código finalizado
+- [x] Banco de dados validado
+- [x] Autenticação validada
+- [x] APIs integradas
+- [x] Responsividade revisada
+- [x] Recuperação de senha testada
+- [x] Deploy publicado na Vercel
+- [x] Fluxos principais testados em produção
 
-## Entregas acadêmicas
+## Funcionalidades por etapa acadêmica
 
 | Etapa | Funcionalidade principal | Situação |
 | --- | --- | --- |
-| AC1 | Busca de animes e catálogo A–Z integrado à AniList | Concluído |
-| AC2 | Minha Lista com status, episódio atual e minutagem | Concluído |
-| AC3 | Sistema de avaliações com nota, comentário e média da comunidade | Concluído |
-| Prova | Recuperação de senha por código enviado por e-mail | Concluído |
+| **AC1** | Busca de animes e catálogo A–Z integrado à AniList | ✅ Concluído |
+| **AC2** | Minha Lista com status, episódio atual e minutagem | ✅ Concluído |
+| **AC3** | Sistema de avaliações com nota, comentário e média da comunidade | ✅ Concluído |
+| **Prova** | Recuperação de senha por código enviado por e-mail | ✅ Concluído |
 
 ## Done
 
@@ -53,4 +53,4 @@ O AniDex é uma plataforma de descoberta, organização e acompanhamento de anim
 
 ## Situação final
 
-O AniDex está concluído e publicado. As funcionalidades previstas foram implementadas e os principais fluxos foram testados em produção. O projeto está na etapa de entrega e apresentação final.
+O AniDex está concluído e publicado. As funcionalidades previstas foram implementadas e os principais fluxos foram testados em produção. O projeto está pronto para entrega e apresentação final.
