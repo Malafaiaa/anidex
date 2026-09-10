@@ -17,12 +17,18 @@ O AniDex é uma plataforma de descoberta, organização e acompanhamento de anim
 
 ## Funcionalidades por etapa acadêmica
 
-| Etapa | Funcionalidade principal | Situação |
-| --- | --- | --- |
-| **AC1** | Busca de animes e catálogo A–Z integrado à AniList | ✅ Concluído |
-| **AC2** | Minha Lista com status, episódio atual e minutagem | ✅ Concluído |
-| **AC3** | Sistema de avaliações com nota, comentário e média da comunidade | ✅ Concluído |
-| **Prova** | Recuperação de senha por código enviado por e-mail | ✅ Concluído |
+As funcionalidades abaixo foram escolhidas por evidenciarem claramente a arquitetura em três camadas: **Front-end, Back-end e Banco de Dados**.
+
+| Etapa | Funcionalidade principal | Front-end | Back-end | Banco de Dados | Situação |
+| --- | --- | --- | --- | --- | --- |
+| **AC1** | Adicionar anime à Minha Lista | Interface permite adicionar o anime | Valida usuário e processa a inclusão | Persiste o vínculo em `UserAnime` | ✅ Concluído |
+| **AC2** | Atualizar status e progresso do anime | Controles de status, episódio e minutagem | Valida e processa as alterações | Atualiza `UserAnime.status`, `progress` e `progressSeconds` | ✅ Concluído |
+| **AC3** | Criar avaliação de anime | Formulário de nota e comentário | Valida e salva a avaliação do usuário | Persiste os dados em `Review` | ✅ Concluído |
+| **Prova** | Dashboard do usuário | Exibe cards, listas e estatísticas | Consulta, agrega e calcula os dados do usuário | Lê dados de `UserAnime`, `Anime` e `Review` | ✅ Concluído |
+
+### Funcionalidades adicionais
+
+Além das funcionalidades utilizadas nas etapas acadêmicas, a versão final também possui busca e catálogo A–Z, paginação, detalhes de anime, sinopse em português, episódios, cadastro, verificação por e-mail, login, logout, recuperação de senha, exclusão de conta, edição e exclusão de avaliações, média da comunidade, gêneros favoritos, Continue assistindo, responsividade e integrações com AniList, Anivex e Jikan.
 
 ## Done
 
